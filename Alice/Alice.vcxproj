@@ -147,15 +147,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Unable to decrypt\Downloads\sqlite3;C:\Program Files\OpenSSL\include;C:\Users\Unable to decrypt\Documents\Git\sqlite_modern_cpp\hdr;C:\Program Files (x86)\signal-protocol-c\include;C:\Program Files (x86)\spdlog\include;C:\Program Files (x86)\cJSON\include;/usr/include;C:\Program Files (x86)\civetweb\include;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Users\julian\Documents\Git\sqlcipher;C:\Program Files\OpenSSL\include;C:\Users\julian\Documents\Git\sqlite_modern_cpp\hdr;C:\Program Files (x86)\signal-protocol-c\include;C:\Program Files (x86)\spdlog\include;C:\Program Files (x86)\cJSON\include;/usr/include;C:\Program Files (x86)\civetweb\include;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>C:\Users\Unable to decrypt\Downloads\sqlite3\sqlite3.lib;C:\Program Files\OpenSSL\lib\libcrypto.lib;C:\Program Files\OpenSSL\lib\libssl.lib;C:\Program Files (x86)\signal-protocol-c\lib\signal-protocol-c.lib;C:\Program Files (x86)\spdlog\lib\spdlog\spdlog.lib;C:\Program Files (x86)\cJSON\lib\cjson.lib;C:\Program Files (x86)\civetweb\lib\civetweb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\julian\Documents\Git\sqlcipher\sqlcipher.lib;C:\Program Files\OpenSSL\lib\libcrypto.lib;C:\Program Files\OpenSSL\lib\libssl.lib;C:\Program Files (x86)\signal-protocol-c\lib\signal-protocol-c.lib;C:\Program Files (x86)\spdlog\lib\spdlog\spdlog.lib;C:\Program Files (x86)\cJSON\lib\cjson.lib;C:\Program Files (x86)\civetweb\lib\civetweb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/NODEFAULTLIB:LIBCMT</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
@@ -166,6 +166,7 @@
     <ClCompile Include="cJSON.c" />
     <ClCompile Include="cors.cpp" />
     <ClCompile Include="crypto.c" />
+    <ClCompile Include="dbUtils.cpp" />
     <ClCompile Include="decode_utils.cpp" />
     <ClCompile Include="decrypt.cpp" />
     <ClCompile Include="encrypt.cpp" />
@@ -190,6 +191,7 @@
     <ClInclude Include="cJSON.h" />
     <ClInclude Include="cors.h" />
     <ClInclude Include="crypto.h" />
+    <ClInclude Include="dbUtils.h" />
     <ClInclude Include="decode_utils.h" />
     <ClInclude Include="decrypt.h" />
     <ClInclude Include="encrypt.h" />
